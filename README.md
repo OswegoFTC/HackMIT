@@ -1,14 +1,14 @@
-# PowerUs - AI-Powered Service Marketplace
+# PowerUp - AI-Powered Service Marketplace
 
-PowerUs is a modern service marketplace application that connects 
+PowerUp is a modern service marketplace application that connects 
 customers with skilled blue-collar workers through an intelligent 
 AI-powered matching system. Designed with a focus on trades professionals 
 like electricians, plumbers, HVAC technicians, roofers, mechanics, and 
-handymen, PowerUs revolutionizes how people find and book skilled services.
+handymen, PowerUp revolutionizes how people find and book skilled services.
 
 ## Overview
 
-PowerUs transforms the traditional service booking experience by leveraging 
+PowerUp transforms the traditional service booking experience by leveraging 
 artificial intelligence to provide smart worker matching, dynamic pricing, 
 and streamlined booking processes. The application features a sophisticated 
 AI chatbot that understands natural language requests and automatically 
