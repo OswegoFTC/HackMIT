@@ -1,114 +1,77 @@
-# PowerUs AI - Intelligent Trades Matching Platform
+# PowerUs - AI-Powered Service Marketplace
 
-PowerUs AI is a modern web platform that connects customers with skilled tradespeople using advanced AI-powered problem analysis and worker matching.
+PowerUs is a modern service marketplace application that connects 
+customers with skilled blue-collar workers through an intelligent 
+AI-powered matching system. Designed with a focus on trades professionals 
+like electricians, plumbers, HVAC technicians, roofers, mechanics, and 
+handymen, PowerUs revolutionizes how people find and book skilled services.
 
-## 🚀 Features
+## Overview
 
-- **AI-Powered Chat Interface** - Conversational problem diagnosis with Claude AI
-- **Smart Worker Matching** - Intelligent matching based on skills, location, and availability
-- **Dynamic Pricing** - Real-time cost estimation with transparent breakdowns
-- **Image Analysis** - Computer vision for visual problem assessment
-- **Modern UI/UX** - Clean, responsive design with intuitive booking flow
-- **Real-time Matching** - Instant worker recommendations with confidence scoring
+PowerUs transforms the traditional service booking experience by leveraging 
+artificial intelligence to provide smart worker matching, dynamic pricing, 
+and streamlined booking processes. The application features a sophisticated 
+AI chatbot that understands natural language requests and automatically 
+matches customers with the most suitable workers based on task complexity, 
+skill level, distance, and seasonal demand factors.
 
-## 🛠 Tech Stack
+The platform presents carefully curated worker options 
+for each request. Some of the options include: a **Recommended** worker (best fit for the job), 
+the **Fastest** available option (earliest time slot), and a **Wait and Save** 
+choice (most cost-effective). This approach eliminates decision paralysis 
+while ensuring customers get the perfect balance of quality, speed, and value
+for their specific needs.
 
-- **Frontend**: Vanilla JavaScript, HTML5, CSS3
-- **Backend**: Node.js with Express.js
-- **AI Integration**: Anthropic Claude API for problem analysis and matching
-- **Image Processing**: Claude Vision API for visual problem assessment
-- **File Upload**: Multer for image handling
-- **Styling**: Modern CSS with custom design system
+## Key Features
 
-## 📦 Installation
+### 🤖 AI Worker Finder
+- **Natural Language Processing**: Chat with an AI assistant that understands your service needs
+- **Smart Categorization**: Automatically detects service types from user descriptions
+- **Deadline Recognition**: Understands urgency and scheduling preferences from natural speech
+- **Instant Matching**: Seamlessly transitions from conversation to worker selection
 
-1. Clone the repository:
-```bash
-git clone https://github.com/OswegoFTC/PowerUs-AI.git
-cd PowerUs-AI
-```
+### Computer Vision AI
+- **Images**: Automatically classifies uploaded images and generates descriptive summaries.
+- **Key Terms**: Enhances job detail descriptions by incorporating relevant key terms for greater specificity.
 
-2. Install dependencies:
-```bash
-npm install
-```
+### 📊 Intelligent Dashboard
+- **Real-time Job Tracking**: Monitor all active appointments and service requests
+- **Status Management**: Track jobs from booking through completion
+- **Performance Metrics**: View ratings, completion rates, and service history
+- **Quick Actions**: Cancel, reschedule, or modify bookings with ease
 
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Add your ANTHROPIC_API_KEY to .env
-```
+### 👥 Worker Marketplace
+- **Curated Professionals**: Browse verified skilled tradespeople
+- **Detailed Profiles**: View ratings, specialties, availability, and pricing
+- **Smart Filtering**: Find workers by location, skill, availability, and budget
+- **Transparent Pricing**: Clear, upfront pricing with no hidden fees
 
-4. Start the development server:
-```bash
-npm start
-```
+### 🎯 Streamlined Booking Flow
+- **3-Step Process**: Simple worker selection, scheduling, and confirmation
+- **Dynamic Pricing**: AI-powered pricing based on complexity and demand
+- **Flexible Scheduling**: Choose from available time slots that work for you
+- **Instant Confirmation**: Immediate booking confirmation with all details
 
-5. Open http://localhost:3000 in your browser
+## Technology Stack
+- **Frontend**: React with TypeScript for type-safe, maintainable code
+- **Styling**: Tailwind CSS v4 with custom design system
+- **UI Components**: Shadcn/ui component library for consistent design
+- **Icons**: Lucide React for modern, accessible iconography
+- **State Management**: React hooks for efficient state handling
+- **Responsive Design**: Mobile-first approach with seamless desktop experience
 
-## 🔧 Configuration
+## Getting Started
+1. **Installation**: Clone the repository and install dependencies
+2. **Development**: Run the development server to start building
+3. **Customization**: Modify components and styles to match your needs
+4. **Deployment**: Build and deploy to your preferred hosting platform
 
-Create a `.env` file with the following variables:
+## Use Cases
+- **Homeowners**: Find trusted professionals for home repairs and maintenance
+- **Landlords**: Quickly book services for rental property maintenance
+- **Small Businesses**: Access skilled tradespeople for commercial needs
+- **Emergency Services**: Get fast response for urgent repair situations
 
-```env
-ANTHROPIC_API_KEY=your_claude_api_key_here
-PORT=3000
-```
-
-## 🏗 Architecture
-
-### Core Components
-
-- **ClaudeTradesMatchingAgent** - AI-powered problem analysis and worker matching
-- **ClaudePricingAgent** - Dynamic pricing calculations
-- **Chat Interface** - Real-time conversational UI
-- **Booking System** - Multi-step booking flow with progress tracking
-- **Worker Database** - Comprehensive tradesperson profiles
-
-### AI Features
-
-- **Problem Classification** - Automatic trade identification from descriptions
-- **Urgency Assessment** - Safety-first prioritization system
-- **Confidence Scoring** - Smart follow-up question logic
-- **Image Analysis** - Visual problem assessment with Claude Vision
-- **Worker Matching** - Multi-factor matching algorithm
-
-## 🎯 Usage
-
-1. **Describe Your Problem** - Use the chat interface to describe what needs fixing
-2. **AI Analysis** - Claude AI analyzes your problem and identifies required trades
-3. **Worker Matching** - Get matched with qualified professionals in your area
-4. **Book Service** - Complete the booking with scheduling and pricing
-5. **Get Help** - Connect with your chosen tradesperson
-
-## 🔄 Development
-
-The application uses a modular architecture:
-
-- `/public/` - Frontend assets (HTML, CSS, JS)
-- `/claude-matching-agent.js` - AI matching logic
-- `/ai-pricing-agent.js` - Pricing calculations
-- `/server.js` - Express server and API routes
-
-## 📝 API Endpoints
-
-- `POST /api/analyze` - Problem analysis with Claude AI
-- `POST /api/upload-image` - Image upload and analysis
-- `GET /api/workers` - Get available workers
-- `POST /api/book` - Create booking
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-For support and questions, please open an issue on GitHub or contact the development team.
+PowerUs streamlines the entire service booking experience, from initial inquiry through 
+job completion, making it easier than ever to connect with skilled professionals and 
+get work done efficiently.
