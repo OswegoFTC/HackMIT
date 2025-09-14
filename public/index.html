@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerUs AI - Find Skilled Workers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">
+                    <span>PowerUs</span>
+                    <div class="logo-subtitle">Get things done</div>
+                </div>
+            </div>
+
+            <div class="user-info">
+                <div class="user-stats">
+                    <span class="stat-number" id="activeJobs">0</span>
+                    <span class="stat-label">Active Jobs</span>
+                    <span class="availability">● Available</span>
+                </div>
+                <div class="user-rating">
+                    <span>⭐ 4.9 rating</span>
+                    <span class="last-active">⏰ Last active: 2 min ago</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item" data-page="dashboard">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item active" data-page="find-workers">
+                    <span class="nav-icon">🔍</span>
+                    Find Workers
+                </a>
+                <a href="#" class="nav-item" data-page="browse-workers">
+                    <span class="nav-icon">👥</span>
+                    Browse Workers
+                </a>
+                <a href="#" class="nav-item" data-page="profile">
+                    <span class="nav-icon">👤</span>
+                    Profile
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    System Online
+                </div>
+                <div class="version">
+                    ⚡ AI Powered v1.0.0
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Page -->
+            <div class="page" id="dashboard-page">
+                <div class="page-header">
+                    <div class="header-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon active-jobs">⏰</div>
+                            <div class="stat-content">
+                                <div class="stat-title">Active Jobs</div>
+                                <div class="stat-value" id="dashboardActiveJobs">0</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon total-spent">💰</div>
+                            <div class="stat-content">
+                                <div class="stat-title">Total Spent</div>
+                                <div class="stat-value">$0</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon completed">🏆</div>
+                            <div class="stat-content">
+                                <div class="stat-title">Completed</div>
+                                <div class="stat-value">0</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon rating">⭐</div>
+                            <div class="stat-content">
+                                <div class="stat-title">Your Rating</div>
+                                <div class="stat-value">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <div class="section-icon">⏰</div>
+                            <h3>Active Jobs</h3>
+                        </div>
+                        <div class="active-jobs-empty">
+                            <div class="empty-clock">🕐</div>
+                            <div class="empty-text">
+                                <div class="empty-title">No active jobs yet</div>
+                                <div class="empty-subtitle">Start by finding workers for your projects</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <div class="section-icon">⚡</div>
+                            <h3>Recent AI Matches</h3>
+                        </div>
+                        <div class="recent-matches-list">
+                            <div class="match-item">
+                                <div class="match-avatar">MT</div>
+                                <div class="match-info">
+                                    <div class="match-name">Marcus Thompson</div>
+                                    <div class="match-trade">Master Electrician</div>
+                                </div>
+                                <div class="match-stats">
+                                    <div class="match-rating">⭐ 4.8</div>
+                                    <div class="match-details">📍 1.2 mi • $85/hr</div>
+                                </div>
+                            </div>
+                            <div class="match-item">
+                                <div class="match-avatar">RW</div>
+                                <div class="match-info">
+                                    <div class="match-name">Rick Williams</div>
+                                    <div class="match-trade">Licensed Plumber</div>
+                                </div>
+                                <div class="match-stats">
+                                    <div class="match-rating">⭐ 4.7</div>
+                                    <div class="match-details">📍 2.8 mi • $75/hr</div>
+                                </div>
+                            </div>
+                            <div class="match-item">
+                                <div class="match-avatar">RT</div>
+                                <div class="match-info">
+                                    <div class="match-name">Robert Taylor</div>
+                                    <div class="match-trade">Moving Helper</div>
+                                </div>
+                                <div class="match-stats">
+                                    <div class="match-rating">⭐ 4.6</div>
+                                    <div class="match-details">📍 4.1 mi • $35/hr</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Find Workers Page -->
+            <div class="page active" id="find-workers-page">
+                <div class="page-header">
+                    <div class="chat-header">
+                        <span class="chat-icon">🤖</span>
+                        <h1>AI Worker Finder</h1>
+                        <span class="ai-badge">⚡</span>
+                    </div>
+                </div>
+
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message assistant">
+                            <div class="message-avatar">🤖</div>
+                            <div class="message-content">
+                                <p>Hi! I'm your AI assistant for finding skilled workers. Tell me what you need help with and when!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <div class="chat-input-wrapper">
+                            <button class="attachment-btn" id="imageUpload">+</button>
+                            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                            <input type="text" id="chatInput" placeholder="Tell me what you need help with..." />
+                            <button class="send-btn" id="sendBtn">→</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Worker Matches Section -->
+                <div class="matches-section" id="matchesSection" style="display: none;">
+                    <h3>🎯 Best Matches for You</h3>
+                    <div class="matches-grid" id="matchesGrid">
+                        <!-- Worker matches will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Browse Workers Page -->
+            <div class="page" id="browse-workers-page">
+                <div class="page-header">
+                    <h1>Browse Workers</h1>
+                    <div class="filters">
+                        <select id="tradeFilter">
+                            <option value="">All Trades</option>
+                            <option value="electrician">Electrician</option>
+                            <option value="plumber">Plumber</option>
+                            <option value="mechanic">Mechanic</option>
+                            <option value="hvac">HVAC</option>
+                            <option value="carpenter">Carpenter</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="workers-grid" id="workersGrid">
+                    <!-- Workers will be populated here -->
+                </div>
+            </div>
+
+            <!-- Profile Page -->
+            <div class="page" id="profile-page">
+                <div class="page-header">
+                    <h1>Profile</h1>
+                </div>
+                <div class="profile-content">
+                    <div class="profile-card">
+                        <div class="profile-avatar">👤</div>
+                        <h3>John Doe</h3>
+                        <p>Customer since 2025</p>
+                        <div class="profile-stats">
+                            <div class="profile-stat">
+                                <span class="stat-label">Jobs Completed</span>
+                                <span class="stat-value">0</span>
+                            </div>
+                            <div class="profile-stat">
+                                <span class="stat-label">Average Rating Given</span>
+                                <span class="stat-value">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content booking-modal">
+            <div class="modal-header">
+                <button class="back-btn" id="backBtn">← Back</button>
+                <h2>Book Your Service</h2>
+                <div class="header-spacer"></div>
+            </div>
+            <div class="booking-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="step-info">
+                    <span id="stepTitle">Step 1 of 3: Choose Worker & Time</span>
+                </div>
+            </div>
+            
+            <div class="booking-content" id="bookingContent">
+                <!-- Booking content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="modal-header">
+                <button class="back-btn" id="successBackBtn">← Back</button>
+                <h2>Book Your Service</h2>
+                <div class="header-spacer"></div>
+            </div>
+            <div class="booking-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill complete"></div>
+                </div>
+                <div class="step-info">
+                    <span>Step 3 of 3: Complete</span>
+                </div>
+            </div>
+            
+            <div class="success-content">
+                <div class="success-icon">✓</div>
+                <h2 class="success-title">Booking Confirmed!</h2>
+                <p class="success-message">Your service has been successfully booked. You'll receive a confirmation email shortly.</p>
+                
+                <div class="booking-summary" id="finalBookingSummary">
+                    <!-- Final booking summary will be populated here -->
+                </div>
+                
+                <div class="success-indicators">
+                    <div class="indicator">● Confirmation sent</div>
+                    <div class="indicator">● Worker notified</div>
+                    <div class="indicator">● Calendar updated</div>
+                </div>
+                
+                <button class="btn-primary continue-btn" id="continueToDashboard">Continue to Dashboard ></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
